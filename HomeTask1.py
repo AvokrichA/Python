@@ -22,6 +22,40 @@
 #m=int(n)+nn+nnn
 #print(m)
 
+#ЗАДАНИЕ 4
+#user_namber = int(input("Напиши целое положительное число:"))
+#n=user_namber%10
+#user_namber = user_namber//10
+#while user_namber>0:
+#    if user_namber % 10 > n:
+#        n=user_namber%10
+#    user_namber=user_namber//10
+#print(n)
+
+#ЗАДАНИЕ 5
+#revenue=int(input("Сумма выручки за год:"))
+#costs=int(input("Сумма издержек:"))
+#profit=revenue-costs
+#profitability=profit/revenue
+#if profit < 0:
+#   print("Вы ничего не заработали в этом году!")
+#      # elif profit = 0:
+#   #print("Без убытков, но и без прибыли")
+#elif profit>0:
+#   print("Отлично поработали! Ваша прибыль в этом году:", profit, ". Рентабельность:", profitability)
+#   people=int(input("Укажите число сотрудников в вашей фирме:"))
+#   profit1=profit/people
+#   print(' Прибыль фирмы в расчете на одного сотрудника составляет:',profit1)
+
+#ЗАДАНИЕ 6
+a = 2
+b = 3
+i = 1
+while a < b:
+    a *= 1.1
+    i += 1
+print(i)
+
 
 
 
