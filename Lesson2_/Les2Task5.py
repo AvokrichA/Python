@@ -11,4 +11,3 @@ if not answer:
     rating.append(user_rating)
 
 print(rating)
-# testing
