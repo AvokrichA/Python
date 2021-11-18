@@ -1,2 +1,3 @@
-a=10
-print(a)
+python My_script раз 2 true
+
+
