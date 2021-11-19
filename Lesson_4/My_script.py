@@ -1,7 +1,6 @@
 from sys import argv
-if len(argv)<4
-print('Выработка в часах' time)
-print('Ставка в час', bet)
-print('Премия', prize)
-def my_salary(time, bet, prize):
-    return time*bet+prize
+print(argv)
+if len(argv)<3:
+    print('Введите три параметра: 1.Выработка в часах, 2.Ставка в час, 3.Премия')
+else:
+    print(f'Salary= {int(argv[1]) * int(argv[2]) + int(argv[3])}')
