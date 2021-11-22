@@ -6,3 +6,4 @@ def fact(num):
 x = 10
 for y, z in enumerate(fact(x)):
     print(f'!{y+1} {z}')
+#попытка2
