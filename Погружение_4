@@ -1,0 +1,41 @@
+'''
+Напишите функцию для транспонирования матрицы.
+'''
+
+
+def transpose_matrix(matrix):
+    rows = len(matrix)
+    cols = len(matrix[0])
+    transpose = [[0 for j in range(rows)] for i in range(cols)]
+    for i in range(rows):
+        for j in range(cols):
+            transpose[j][i] = matrix[i][j]
+    return transpose
+
+
+def print_(matrix_):
+    for row in matrix_:
+        for x in row:
+            print(x, end=" ")
+        print()
+
+
+my_matrix = [[10, 20], [35, 45], [56, 35], [35, 76]]
+print_(my_matrix)
+print()
+print_(transpose_matrix(my_matrix))
+
+'''
+Напишите функцию принимающую на вход только ключевые параметры и возвращающую словарь, где ключ — значение переданного
+аргумента, а значение — имя аргумента. Если ключ не хешируем, используйте его строковое представление.
+'''
+def my_func(**kwargs):
+    my_dict = dict()
+    for key, value in kwargs.items():
+        if isinstance(value, (list, dict, set)):
+            value = str(value)
+        my_dict[value] = key
+    return my_dict
+
+
+print(my_func(компании=['Рога', 'Копыта', 'Хвосты'], учредители={1: 'Петров', 2: 'Сидоров'}))
