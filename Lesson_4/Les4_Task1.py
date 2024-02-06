@@ -5,3 +5,4 @@ if len(argv)<3:
 else:
     print(f'Salary= {float(argv[1]) * float(argv[2]) + float(argv[3])}')
 
+

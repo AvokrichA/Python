@@ -12,3 +12,5 @@ for i in cycle(my_list):
     if counter > 10:
         break
     print(i)
+
+#попытка2
